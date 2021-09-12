@@ -11,9 +11,9 @@ import java.util.Objects;
 public class ThreadLocalDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        Thread thread = new Thread(() -> test("abc", false));
-        thread.start();
-        thread.join();
+        Thread t1 = new Thread(() -> test("abc", false));
+        t1.start();
+        t1.join();
         System.out.println("--gc后--");
         Thread t2 = new Thread(() -> test("edf", true));
         t2.start();
