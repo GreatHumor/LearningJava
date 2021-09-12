@@ -1,4 +1,4 @@
-package com.gh.thread;
+package com.gh.thread.threadLocal;
 
 import org.junit.Test;
 
