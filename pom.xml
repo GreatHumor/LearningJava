@@ -12,6 +12,7 @@
     <modules>
         <module>redis</module>
         <module>concurrent</module>
+        <module>security</module>
     </modules>
 
     <dependencies>
