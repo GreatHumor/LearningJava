@@ -24,6 +24,9 @@ public class RedisConnectorTest {
     private static StatefulRedisConnection<String, String> CONNECTION;
     private static RedisClient CLIENT;
 
+    /**
+     * 建立连接
+     */
     @BeforeClass
     public static void beforeClass() {
         RedisURI redisUri = RedisURI.builder().withHost("localhost").withPort(6379)
@@ -32,11 +35,16 @@ public class RedisConnectorTest {
         CONNECTION = CLIENT.connect();
     }
 
+    /**
+     * 关闭连接
+     * @throws Exception
+     */
     @AfterClass
     public static void afterClass() throws Exception {
         CONNECTION.close();
         CLIENT.shutdown();
     }
+
 
 
 }
