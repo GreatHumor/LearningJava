@@ -16,6 +16,7 @@
         <module>javase</module>
         <module>springboot2</module>
         <module>netty</module>
+        <module>vm</module>
     </modules>
 
     <dependencies>
