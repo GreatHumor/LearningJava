@@ -17,6 +17,7 @@
         <module>springboot2</module>
         <module>netty</module>
         <module>vm</module>
+        <module>agent</module>
     </modules>
 
     <dependencies>
